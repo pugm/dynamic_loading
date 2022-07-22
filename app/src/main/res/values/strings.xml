@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">動態加載</string>
+    <string name="title_ondemand">On Demand</string>
+    <string name="button_download_dynamic_feature">下載動態模塊</string>
+    <string name="downloading_feature">正在下載動態模塊</string>
+    <string name="feature_ready_to_be_used">SplitInstallSessionStatus狀態已完成，改變按鈕狀態</string>
+    <string name="button_open_dynamic_feature">打開動態模塊</string>
+    <string name="button_uninstall_dynamic_feature">卸載動態模塊</string>
+    <string name="title_dynamicfeature">On Demand</string>
+</resources>

@@ -1,0 +1,3 @@
+<resources>
+    <string name="test">動態 module 加載測試成功</string>
+</resources>
