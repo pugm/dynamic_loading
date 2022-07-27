@@ -115,9 +115,14 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
      * 請求卸載對應 module
      */
     private fun requestUninstall() {
+        val installModule = manager.installedModules
+        showToast("現已安裝的module有 $installModule")
+
         manager.deferredUninstall(listOf("ondemand"))
             .addOnSuccessListener { showToast("（狀態監聽）卸載模塊 ${DYNAMIC_MODULE_NAME} 成功") }
-            .addOnFailureListener { showToast("（狀態監聽）卸載模塊 ${DYNAMIC_MODULE_NAME} 失敗") }
+            .addOnFailureListener { exception ->
+                showToast("（狀態監聽）卸載模塊 ${DYNAMIC_MODULE_NAME} 失敗")
+            }
             .addOnCompleteListener { showToast("（狀態監聽）已完成該項動作的監聽") }
     }
 
